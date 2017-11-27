@@ -5,7 +5,7 @@ address: 中国, 青岛
 email: tianxiang.hu@hotmail.com
 github: shuferhoo
 gavatar: /assets/img/avatar.JPG
-Professional Experience:
+workHistory:
 - work4:
   company: 易方达基金管理有限公司
   location: 中国, 广州
@@ -38,7 +38,7 @@ Professional Experience:
   duration: (2015.10 - 2016.1)
   description: 。
 
-Education Background:
+educationHistory:
 - education1:
   organization: 上海财经大学
   degree: 硕士
@@ -55,7 +55,7 @@ Education Background:
   duration: (2012.9 - 2016.7)
   description: .
   
-  - education2:
+  - education3:
   organization: 上海财经大学
   degree: 双学士
   major: 会计学
