@@ -70,16 +70,16 @@ languages:
   proficiency: Excellent
 programmingSkills:
 - Java:
-  name: 深度学习
+  name: Machine Learning
   percentage: 90%
 - Bash:
-  name: 数据挖掘
+  name: Data Mining
   percentage: 90%
 - CPP:
   name: Python
   percentage: 90%
 - PHP:
-  name: Matlab/SAS/
+  name: Matlab/SAS
   percentage: 70%
 - Python:
   name: SQL
