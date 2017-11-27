@@ -1,5 +1,5 @@
 # Author settings
-name: 胡天翔
+name: 胡小白
 title: 人工智能算法研究员
 address: 中国, 青岛
 email: tianxiang.hu@hotmail.com
@@ -7,12 +7,12 @@ github: shuferhoo
 gavatar: /assets/img/avatar.JPG
 workHistory:
 - work4:
-  company: 上海本趣网络科技有限公司
-  location: 中国, 上海
-  title: Android & Unity & AR 开发工程师
-  started: 2016
-  duration: (2016.5 - Present)
-  description: 开发 "无他相机" 安卓端，使用 unity 实现 3D 特效
+  company: 易方达基金管理有限公司
+  location: 中国, 广州
+  title: 人工智能算法研究员
+  started: 2017
+  duration: (2017.12 - Present)
+  description: .
 
 - work3:
   company: 上海大银幕网络科技有限公司
