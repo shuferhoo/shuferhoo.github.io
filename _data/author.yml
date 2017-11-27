@@ -70,20 +70,20 @@ languages:
   proficiency: Excellent
 programmingSkills:
 - Java:
-  name: Machine Learning
+  name: Deep Learning
   percentage: 90%
 - Bash:
   name: Data Mining
   percentage: 90%
 - CPP:
   name: Python
-  percentage: 90%
+  percentage: 88%
 - PHP:
   name: Matlab/SAS
-  percentage: 70%
+  percentage: 80%
 - Python:
   name: SQL
-  percentage: 70%
+  percentage: 82%
 - Kotlin:
   name: C/Java
-  percentage: 60%
+  percentage: 66%
