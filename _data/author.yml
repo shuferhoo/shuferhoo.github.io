@@ -41,11 +41,26 @@ workHistory:
 educationHistory:
 - education1:
   organization: 上海财经大学
-  degree: 硕
-  major: 统计
-  started: 2010
+  degree: 硕士
+  major: 统计学
+  started: 2016
   duration: (2016.9 - 2018.7)
   description: .
+- education2:
+  organization: 上海财经大学
+  degree: 学士
+  major: 统计学
+  started: 2012
+  duration: (2012.9 - 2016.7)
+  description: .
+- education3:
+  organization: 上海财经大学
+  degree: 双学士
+  major: 会计学
+  started: 2012
+  duration: (2012.9 - 2016.7)
+  description: .
+  
 languages:
 - language1:
   name: 中文
