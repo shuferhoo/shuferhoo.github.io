@@ -6,12 +6,19 @@ email: tianxiang.hu@hotmail.com
 github: shuferhoo
 gavatar: /assets/img/avatar.JPG
 workHistory:
-- work4:
+- work5:
   company: 易方达基金管理有限公司
   location: 中国, 广州
   title: 金融科技部
-  started: 2017
+  started: 2018
   duration: (2018.7 - Present)
+  description: .
+- work4:
+  company: 前海开源基金管理有限公司
+  location: 中国, 深圳
+  title: FOF投资部
+  started: 2018
+  duration: (2018.2 - 2018.5)
   description: .
 - work3:
   company: 广发证券股份有限公司
