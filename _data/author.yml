@@ -1,6 +1,6 @@
 # Author settings
 name: 胡小白
-title: 人工智能算法研究员
+title: 智能方案研究员
 address: 中国, 青岛
 email: tianxiang.hu@hotmail.com
 github: shuferhoo
@@ -9,14 +9,14 @@ workHistory:
 - work4:
   company: 易方达基金管理有限公司
   location: 中国, 广州
-  title: 人工智能算法研究员
+  title: 金融科技部
   started: 2017
-  duration: (2017.12 - Present)
+  duration: (2018.7 - Present)
   description: .
 - work3:
   company: 广发证券股份有限公司
   location: 中国，上海
-  title: 投行项目助理
+  title: 投资银行部
   started: 2017
   duration: (2017.2 - 2017.5)
   description: .                                                                  
@@ -24,7 +24,7 @@ workHistory:
 - work2:
   company: 兴业证券股份有限公司
   location: 中国，上海
-  title: 投行项目助理
+  title: 投资银行部
   started: 2016
   duration: (2016.3 - 2016.6)
   description: .
@@ -32,7 +32,7 @@ workHistory:
 - work1:
   company: 平安证券有限责任公司
   location: 中国, 上海
-  title: 基金分析师助理
+  title: 基金研究部
   started: 2015
   duration: (2015.10 - 2016.1)
   description: .
@@ -44,21 +44,21 @@ educationHistory:
   major: 应用统计
   started: 2016
   duration: (2016.9 - 2018.7)
-  description: 主修课程：人工智能、分布式统计计算、文本挖掘、社交网络分析、统计软件、多元统计分析、投资学、金融计量学、金融衍生品等。
+  description: 
 - education2:
   organization: 上海财经大学
   degree: 学士
   major: 统计学
   started: 2012
   duration: (2012.9 - 2016.7)
-  description: 主修课程：数学分析、高等代数、概率论、数理统计、回归分析、时间序列分析、精算数学、统计模拟、数据挖掘、计算机编程、web应用、数据库、宏/微观经济学、公司金融、国际金融等。
+  description:
 - education3:
   organization: 上海财经大学
   degree: 双学士
   major: 会计学
   started: 2012
   duration: (2012.9 - 2016.7)
-  description: 主修课程：财务会计、管理会计、成本会计、审计学、财务报表分析、财务决策支持系统等。
+  description: 
   
 languages:
 - language1:
