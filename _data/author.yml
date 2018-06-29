@@ -23,7 +23,7 @@ workHistory:
 - work3:
   company: 广发证券股份有限公司
   location: 中国，上海
-  title: 投资银行部
+  title: 投资银行部（实习）
   started: 2017
   duration: (2017.2 - 2017.5)
   description: .                                                                  
@@ -31,7 +31,7 @@ workHistory:
 - work2:
   company: 兴业证券股份有限公司
   location: 中国，上海
-  title: 投资银行部
+  title: 投资银行部（实习）
   started: 2016
   duration: (2016.3 - 2016.6)
   description: .
@@ -39,7 +39,7 @@ workHistory:
 - work1:
   company: 平安证券有限责任公司
   location: 中国, 上海
-  title: 基金研究部
+  title: 基金研究部（实习）
   started: 2015
   duration: (2015.10 - 2016.1)
   description: .
