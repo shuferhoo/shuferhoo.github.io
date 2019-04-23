@@ -7,60 +7,60 @@ github: shuferhoo
 gavatar: /assets/img/avatar.JPG
 workHistory:
 - work5:
-  company: 易方达基金管理有限公司
+  company: E基金管理有限公司
   location: 中国, 广州
   title: 金融科技部
   started: 2018
   duration: (2018.7 - Present)
   description: .
 - work4:
-  company: 前海开源基金管理有限公司
+  company: Q基金管理有限公司
   location: 中国, 深圳
   title: FOF投资部
   started: 2018
   duration: (2018.2 - 2018.6)
   description: .
 - work3:
-  company: 广发证券股份有限公司
+  company: G证券股份有限公司
   location: 中国，上海
-  title: 投资银行部（实习）
+  title: 投资银行部
   started: 2017
   duration: (2017.2 - 2017.5)
   description: .                                                                  
 
 - work2:
-  company: 兴业证券股份有限公司
+  company: X证券股份有限公司
   location: 中国，上海
-  title: 投资银行部（实习）
+  title: 投资银行部
   started: 2016
   duration: (2016.3 - 2016.6)
   description: .
 
 - work1:
-  company: 平安证券有限责任公司
+  company: P证券有限责任公司
   location: 中国, 上海
-  title: 基金研究部（实习）
+  title: 基金研究部
   started: 2015
   duration: (2015.10 - 2016.1)
   description: .
 
 educationHistory:
 - education1:
-  organization: 上海财经大学
+  organization: S大学
   degree: 硕士
   major: 应用统计
   started: 2016
   duration: (2016.9 - 2018.7)
   description: 
 - education2:
-  organization: 上海财经大学
+  organization: S大学
   degree: 学士
   major: 统计学
   started: 2012
   duration: (2012.9 - 2016.7)
   description:
 - education3:
-  organization: 上海财经大学
+  organization: S大学
   degree: 双学士
   major: 会计学
   started: 2012
