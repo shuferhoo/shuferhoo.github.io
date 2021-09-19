@@ -1,17 +1,24 @@
 # Author settings
 name: 小白小白
-title: 智能方案研究员
+title: 研究经理
 address: 中国, 青岛
 email: hutianxiang@hutianxiang.com.cn
 github: shuferhoo
 gavatar: /assets/img/avatar.JPG
 workHistory:
+- work6:
+  company: F基金管理有限公司
+  location: 中国, 广州
+  title: 投研中台
+  started: 2021
+  duration: (2021.9 - Present)
+  description: .
 - work5:
   company: E基金管理有限公司
   location: 中国, 广州
   title: 金融科技部
   started: 2018
-  duration: (2018.7 - Present)
+  duration: (2018.7 - 2021.7)
   description: .
 - work4:
   company: Q基金管理有限公司
@@ -90,6 +97,3 @@ programmingSkills:
 - Python:
   name: SQL
   percentage: 82%
-- Kotlin:
-  name: C/Java
-  percentage: 66%
