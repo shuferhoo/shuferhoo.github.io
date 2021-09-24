@@ -9,6 +9,6 @@ excerpt_separator: "```"
 
 天涯路远，江湖再见。
 
-<img src="/assets/img/thanks.jpg" width="1200px"/>
+<img src="/assets/img/thanks.jpg"/>
 
 
