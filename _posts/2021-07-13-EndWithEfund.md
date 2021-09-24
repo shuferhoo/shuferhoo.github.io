@@ -6,6 +6,6 @@ location: 广州
 pulished: true
 excerpt_separator: "```"
 ---
-
+<img src="/assets/img/winter.jpg" width="240px"/>
 天涯路远，江湖再见。
 
