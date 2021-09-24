@@ -1,6 +1,6 @@
 ---
 layout: post_layout
-title: 感谢信&辞职申请书
+title: 感谢信
 time: 2021年07月15日 星期四
 location: 广州
 pulished: true
