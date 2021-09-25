@@ -2,7 +2,7 @@
 layout: post_layout
 title: 感谢信
 time: 2021年07月13日 星期二
-location: 上海
+location: 广州
 pulished: true
 excerpt_separator: "```"
 ---
