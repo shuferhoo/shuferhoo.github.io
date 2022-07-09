@@ -32,23 +32,9 @@ educationHistory:
 - education1:
   organization: S大学
   degree: 硕士
-  major: 应用统计
-  started: 2016
-  duration: (2016.9 - 2018.7)
-  description: 
-- education2:
-  organization: S大学
-  degree: 学士
   major: 统计学
-  started: 2012
-  duration: (2012.9 - 2016.7)
-  description:
-- education3:
-  organization: S大学
-  degree: 双学士
-  major: 会计学
-  started: 2012
-  duration: (2012.9 - 2016.7)
+  started: 2016
+  duration: (2012.9 - 2018.7)
   description: 
   
 languages:
