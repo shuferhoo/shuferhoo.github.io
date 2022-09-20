@@ -11,7 +11,7 @@ workHistory:
   location: 中国, 深圳
   title: 养老金投资
   started: 2022
-  duration: (2022.87 - present)
+  duration: (2022.07 - present)
   description: .
 - work2:
   company: F基金管理有限公司
@@ -46,17 +46,17 @@ languages:
   proficiency: Excellent
 programmingSkills:
 - Java:
-  name: Deep Learning
+  name: AI
   percentage: 90%
 - Bash:
-  name: Data Mining
+  name: Python
   percentage: 90%
 - CPP:
-  name: Python
+  name: Cryptocurrency
   percentage: 88%
 - PHP:
-  name: Matlab/SAS
+  name: Equity Investment
   percentage: 80%
 - Python:
-  name: SQL
+  name: Pension Investment
   percentage: 82%
