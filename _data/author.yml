@@ -46,17 +46,17 @@ languages:
   proficiency: Excellent
 programmingSkills:
 - Java:
-  name: AI
+  name: 人工智能
   percentage: 90%
 - Bash:
-  name: Python
+  name: 计算机编程
   percentage: 90%
 - CPP:
-  name: Cryptocurrency
+  name: 加密货币
   percentage: 88%
 - PHP:
-  name: Equity Investment
+  name: 权益投资
   percentage: 80%
 - Python:
-  name: Pension Investment
+  name: 养老金投资
   percentage: 82%
