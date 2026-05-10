@@ -1,0 +1,14 @@
+[Unit]
+Description=Jekyll blog LAN service
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/htx/github/shuferhoo.github.io
+ExecStart=/home/htx/github/shuferhoo.github.io/scripts/serve-lan.sh
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

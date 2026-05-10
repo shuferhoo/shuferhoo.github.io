@@ -1,0 +1,20 @@
+---
+layout: blog_layout
+title: 目录
+---
+
+<section class="section-title">
+    <p>Archive</p>
+    <h2>目录</h2>
+</section>
+
+{% for post in site.posts %}
+    <section class="smenu">
+        {{ post.time  | date: "%Y/%m/%d" }}
+        &nbsp;&nbsp;
+        <a href="{{post.url}}">
+            <span class="glyphicon glyphicon-hand-right">  </span>
+            &nbsp;&nbsp; {{post.title}} &nbsp;&nbsp; 
+        </a>
+    </section>
+{% endfor %}

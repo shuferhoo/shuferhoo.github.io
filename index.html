@@ -1,0 +1,797 @@
+---
+layout: null
+title: 小白小白
+---
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ site.title }}</title>
+  <meta name="description" content="{{ site.description }}">
+  <link rel="canonical" href="{{ site.url }}/">
+  <link rel="icon" type="image/png" href="{{ site.favicon }}">
+  <style>
+    :root {
+      --text: #f4f7fb;
+      --muted: rgba(244, 247, 251, 0.68);
+      --line: rgba(244, 247, 251, 0.18);
+      --shell-width: 1180px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin: 0;
+      width: 100%;
+      min-height: 100%;
+      background:
+        radial-gradient(circle at center, #11151a 0%, #07090c 48%, #000 100%);
+      color: var(--text);
+      font-family: "Times New Roman", "SimSun", "Songti SC", serif;
+    }
+
+    body {
+      overflow-x: hidden;
+      overflow-y: auto;
+    }
+
+    .home-page {
+      position: relative;
+      min-height: 100vh;
+      min-height: 100svh;
+      min-height: 100dvh;
+      padding: 116px 24px 36px;
+    }
+
+    .home-shell {
+      width: min(var(--shell-width), 100%);
+      margin: 0 auto;
+    }
+
+    .home-hero {
+      display: grid;
+      grid-template-columns: minmax(300px, 430px) minmax(0, 1fr);
+      align-items: start;
+      gap: clamp(24px, 4vw, 64px);
+      min-height: calc(100vh - 152px);
+      min-height: calc(100svh - 152px);
+      min-height: calc(100dvh - 152px);
+    }
+
+    .home-nav {
+      position: fixed;
+      z-index: 5;
+      top: 24px;
+      left: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      width: min(var(--shell-width), calc(100% - 48px));
+      transform: translateX(-50%);
+    }
+
+    .home-identity {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      min-width: 0;
+    }
+
+    .home-avatar {
+      flex: 0 0 auto;
+    }
+
+    .home-avatar img {
+      width: 60px;
+      height: 60px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      object-fit: cover;
+      background: rgba(18, 20, 25, 0.46);
+      box-shadow: 0 14px 34px rgba(0, 0, 0, 0.28);
+    }
+
+    .home-title {
+      min-width: 0;
+    }
+
+    .home-brand {
+      display: inline-block;
+      color: var(--text);
+      font-size: 30px;
+      line-height: 1.2;
+      font-weight: 800;
+      text-decoration: none;
+      text-shadow: 0 0 18px rgba(255, 255, 255, 0.18);
+    }
+
+    .home-tagline {
+      margin: 6px 0 0;
+      color: var(--muted);
+      font-size: 15px;
+      line-height: 1.6;
+      text-shadow: 0 0 16px rgba(0, 0, 0, 0.32);
+    }
+
+    .home-tagline:empty {
+      display: none;
+    }
+
+    .home-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      gap: 8px;
+      margin-top: 6px;
+      flex: 0 0 auto;
+    }
+
+    .home-links a {
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: rgba(18, 20, 25, 0.46);
+      color: var(--text);
+      padding: 7px 10px;
+      font-size: 13px;
+      line-height: 1.2;
+      text-decoration: none;
+      backdrop-filter: blur(14px);
+      box-shadow: 0 12px 34px rgba(0, 0, 0, 0.24);
+    }
+
+    .home-links a:hover,
+    .home-links a:focus {
+      border-color: rgba(244, 247, 251, 0.82);
+      background: rgba(244, 247, 251, 0.12);
+    }
+
+    .home-quote {
+      position: relative;
+      z-index: 2;
+      width: min(100%, 430px);
+      margin: 0;
+      color: rgba(244, 247, 251, 0.78);
+      font-size: clamp(16px, 1.45vw, 21px);
+      line-height: 1.48;
+      text-shadow: 0 0 24px rgba(0, 0, 0, 0.72);
+      pointer-events: auto;
+      user-select: text;
+    }
+
+    .home-quote p {
+      margin: 0;
+      overflow-wrap: anywhere;
+      pointer-events: auto;
+      user-select: text;
+    }
+
+    .home-quote .quote-cn {
+      margin-top: 30px;
+      color: inherit;
+      font-size: 0.88em;
+      line-height: 1.62;
+    }
+
+    .home-quote .quote-cn + .quote-cn {
+      margin-top: 12px;
+    }
+
+    .home-quote cite {
+      display: block;
+      margin-top: 14px;
+      color: inherit;
+      font-size: inherit;
+      font-style: normal;
+      line-height: inherit;
+      overflow-wrap: anywhere;
+      white-space: nowrap;
+      pointer-events: auto;
+      user-select: text;
+    }
+
+    .home-quote .quote-author,
+    .home-quote .quote-name {
+      display: inline;
+    }
+
+    .home-copy {
+      position: relative;
+      z-index: 2;
+      pointer-events: auto;
+      user-select: text;
+      align-self: start;
+      padding-top: clamp(42px, 5vw, 68px);
+    }
+
+    .home-visual {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .home-stage {
+      position: relative;
+      min-height: clamp(420px, 68dvh, 760px);
+      border-radius: 32px;
+      overflow: hidden;
+      background: transparent;
+      touch-action: none;
+    }
+
+    .home-stage canvas {
+      position: absolute;
+      inset: 0;
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
+    .formula {
+      position: relative;
+      z-index: 2;
+      display: block;
+      width: 100%;
+      margin: 0;
+      color: rgba(244, 247, 251, 0.78);
+      padding: 2px 4px 0;
+      font-family: "Times New Roman", Georgia, serif;
+      font-size: 14px;
+      font-style: italic;
+      line-height: 1.35;
+      text-align: center;
+      user-select: text;
+      pointer-events: auto;
+      text-shadow: 0 0 18px rgba(0, 0, 0, 0.72);
+    }
+
+    .formula sup {
+      font-size: 0.72em;
+      line-height: 0;
+    }
+
+    .formula sub {
+      font-size: 0.72em;
+      line-height: 0;
+    }
+
+    .formula .expr {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 4px;
+      white-space: nowrap;
+    }
+
+    .formula .frac {
+      display: inline-grid;
+      grid-template-rows: auto auto;
+      align-items: center;
+      min-width: 32px;
+      vertical-align: middle;
+      transform: translateY(3px);
+    }
+
+    .formula .frac span {
+      display: block;
+      text-align: center;
+      font-size: 0.86em;
+      line-height: 1.05;
+    }
+
+    .formula .frac span:first-child {
+      border-bottom: 1px solid currentColor;
+      padding: 0 4px 2px;
+    }
+
+    .formula .frac span:last-child {
+      padding-top: 2px;
+    }
+
+    @media (max-width: 1220px) {
+      .home-page {
+        padding-top: 108px;
+      }
+
+      .home-nav {
+        top: 12px;
+        width: min(100% - 24px, var(--shell-width));
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .home-brand {
+        font-size: 22px;
+      }
+
+      .home-avatar img {
+        width: 46px;
+        height: 46px;
+        border-radius: 14px;
+      }
+
+      .home-tagline {
+        font-size: 12px;
+      }
+
+      .home-links {
+        max-width: none;
+        width: 100%;
+        justify-content: flex-start;
+        margin-top: 0;
+      }
+
+      .home-links a {
+        padding: 6px 8px;
+        font-size: 12px;
+      }
+
+      .home-hero {
+        min-height: 0;
+        gap: 24px;
+      }
+
+      .home-copy {
+        padding-top: clamp(32px, 4vw, 48px);
+      }
+
+      .home-stage {
+        min-height: clamp(360px, 56dvh, 620px);
+      }
+
+      .home-visual {
+        gap: 2px;
+      }
+
+      .home-quote {
+        font-size: 14px;
+        line-height: 1.5;
+      }
+    }
+
+    @media (max-width: 860px) {
+      .home-page {
+        padding: 100px 16px 28px;
+      }
+
+      .home-hero {
+        grid-template-columns: 1fr;
+        gap: 18px;
+      }
+
+      .home-copy {
+        order: 2;
+        align-self: stretch;
+        padding-top: 0;
+      }
+
+      .home-stage {
+        min-height: min(58dvh, 520px);
+        border-radius: 26px;
+      }
+
+      .home-visual {
+        gap: 2px;
+      }
+
+      .home-quote {
+        width: 100%;
+        max-width: none;
+        font-size: 13px;
+        line-height: 1.46;
+      }
+
+      .home-quote p:first-child,
+      .home-quote cite {
+        display: block;
+      }
+
+      .home-quote p:first-child {
+        margin-bottom: 10px;
+      }
+
+      .home-quote .quote-cn {
+        margin-top: 12px;
+        font-size: 1em;
+        line-height: 1.45;
+      }
+
+      .home-quote cite {
+        margin-top: 10px;
+      }
+
+      .home-quote .quote-author,
+      .home-quote .quote-name {
+        display: inline;
+      }
+
+      .formula {
+        font-size: 11px;
+        line-height: 1.34;
+        padding-top: 0;
+      }
+
+      .formula .expr {
+        white-space: normal;
+        flex-wrap: wrap;
+        row-gap: 2px;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .home-page {
+        padding-top: 96px;
+      }
+
+      .home-stage {
+        min-height: min(50dvh, 420px);
+      }
+
+      .formula {
+        font-size: 10.5px;
+      }
+
+      .home-quote {
+        font-size: 11.5px;
+        line-height: 1.5;
+      }
+
+      .home-quote .quote-cn {
+        margin-top: 10px;
+      }
+
+      .home-quote cite {
+        margin-top: 8px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="home-nav" aria-label="主导航">
+    <div class="home-identity">
+      <a class="home-avatar" href="/">
+        <img alt="My Avatar" src="/assets/img/avatar.JPG">
+      </a>
+      <div class="home-title">
+        <a class="home-brand" href="/">{{ site.data.blog.title }}</a>
+        <p class="home-tagline">{{ site.data.blog.description }}</p>
+      </div>
+    </div>
+    <div class="home-links">
+      <a href="/">主页</a>
+      <a href="/essays.html">散文</a>
+      <a href="/notes.html">手记</a>
+      <a href="/reading.html">阅读</a>
+      <a href="/about.html">关于我</a>
+    </div>
+  </nav>
+
+  <main class="home-page">
+    <div class="home-shell">
+      <section class="home-hero" aria-label="首页介绍">
+        <div class="home-copy">
+          <blockquote class="home-quote">
+            <p>From Grothendieck, I have also learned not to take glory in the difficulty of a proof: difficulty means we have not understood. The idea is to be able to paint a landscape in which the proof is obvious.</p>
+            <cite><span class="quote-author">&mdash; Pierre&nbsp;</span><span class="quote-name">Deligne</span></cite>
+            <p class="quote-cn">我从格罗滕迪克那里学到，证明切勿以艰难高深为荣，艰难高深意味着我们未能洞悉本质。至高境界是勾勒出一幅图景，一切都自然而然、不言而喻。</p>
+            <p class="quote-cn">&mdash; 皮埃尔&middot;德利涅</p>
+          </blockquote>
+        </div>
+
+        <div class="home-visual">
+          <div class="home-stage">
+            <canvas id="scene" aria-hidden="true"></canvas>
+          </div>
+          <div class="formula">
+            <span class="expr">
+              <span>r(&theta;) = e<sup>sin&nbsp;&theta;</sup> - 2 cos(4&theta;) + sin<sup>5</sup></span>
+              <span>(</span>
+              <span class="frac"><span>2&theta; - &pi;</span><span>24</span></span>
+              <span>)</span>
+            </span>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <script>
+    (function () {
+      var canvas = document.getElementById("scene");
+      var stage = document.querySelector(".home-stage");
+      var ctx = canvas.getContext("2d", { alpha: false });
+      var W = 0;
+      var H = 0;
+      var DPR = 1;
+      var time = 0;
+      var points = [];
+      var profile = null;
+      var targetTiltX = 0;
+      var targetTiltY = 0;
+      var tiltX = 0;
+      var tiltY = 0;
+      var dragging = false;
+      var lastMouse = { x: 0, y: 0 };
+      var rafId = 0;
+      var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+      var resizeObserver = null;
+
+      function getProfile() {
+        if (W <= 560) {
+          return {
+            speed: 0.36,
+            density: 900,
+            widthRatio: 0.1,
+            heightRatio: 0.1,
+            verticalShift: 0.01,
+            depth: 0.16,
+            outerLineWidth: 5.4,
+            innerLineWidth: 1.4,
+            outerAlpha: 0.34,
+            innerAlpha: 0.88,
+            outerShadow: 14,
+            innerShadow: 5,
+            drift: 0.6
+          };
+        }
+
+        if (W <= 900) {
+          return {
+            speed: 0.54,
+            density: 1250,
+            widthRatio: 0.097,
+            heightRatio: 0.097,
+            verticalShift: 0.015,
+            depth: 0.18,
+            outerLineWidth: 6.4,
+            innerLineWidth: 1.6,
+            outerAlpha: 0.38,
+            innerAlpha: 0.92,
+            outerShadow: 18,
+            innerShadow: 6,
+            drift: 0.9
+          };
+        }
+
+        return {
+          speed: 0.72,
+          density: 1800,
+          widthRatio: 0.093,
+          heightRatio: 0.093,
+          verticalShift: 0.02,
+          depth: 0.22,
+          outerLineWidth: 8,
+          innerLineWidth: 1.8,
+          outerAlpha: 0.46,
+          innerAlpha: 0.96,
+          outerShadow: 22,
+          innerShadow: 8,
+          drift: 1.2
+        };
+      }
+
+      function resize() {
+        var rect = stage.getBoundingClientRect();
+        DPR = Math.min(window.devicePixelRatio || 1, 2);
+        W = Math.max(1, Math.floor(rect.width));
+        H = Math.max(1, Math.floor(rect.height));
+        profile = getProfile();
+        canvas.width = Math.floor(W * DPR);
+        canvas.height = Math.floor(H * DPR);
+        canvas.style.width = W + "px";
+        canvas.style.height = H + "px";
+        ctx.setTransform(DPR, 0, 0, DPR, 0, 0);
+      }
+
+      function makePoints() {
+        var density = profile.density;
+        var loops = Math.PI * 12;
+        var scale = Math.min(W * profile.widthRatio, H * profile.heightRatio);
+        var i;
+        points = [];
+
+        for (i = 0; i < density; i += 1) {
+          var local = i / (density - 1);
+          var t = local * loops;
+          var r = Math.exp(Math.sin(t)) -
+            2 * Math.cos(4 * t) +
+            Math.pow(Math.sin((2 * t - Math.PI) / 24), 5);
+          points.push({
+            x: -r * Math.cos(t) * scale,
+            y: -r * Math.sin(t) * scale,
+            z: Math.sin(t * 2) * scale * profile.depth,
+            local: local
+          });
+        }
+      }
+
+      function project(p) {
+        var x = p.x + tiltY * p.z * 0.32;
+        var y = p.y - tiltX * p.z * 0.32;
+        var z = p.z;
+        var perspective = Math.max(0.58, 760 / (760 + z));
+        var offsetY = H * profile.verticalShift;
+
+        return {
+          x: W / 2 + x * perspective,
+          y: H / 2 + offsetY + y * perspective,
+          p: perspective,
+          z: z
+        };
+      }
+
+      function fadeBackground() {
+        var grd;
+        grd = ctx.createRadialGradient(W / 2, H / 2, 0, W / 2, H / 2, Math.max(W, H) * 0.72);
+        grd.addColorStop(0, "#11151a");
+        grd.addColorStop(0.48, "#07090c");
+        grd.addColorStop(1, "#000000");
+        ctx.fillStyle = grd;
+        ctx.fillRect(0, 0, W, H);
+      }
+
+      function drawButterfly() {
+        var i;
+        var last = null;
+        var glow = ctx.createLinearGradient(W * 0.25, H * 0.2, W * 0.75, H * 0.82);
+        var line = ctx.createLinearGradient(W * 0.2, H * 0.18, W * 0.82, H * 0.85);
+        ctx.save();
+        ctx.globalCompositeOperation = "lighter";
+
+        glow.addColorStop(0, "rgba(255, 199, 82, 0.20)");
+        glow.addColorStop(0.34, "rgba(255, 84, 190, 0.24)");
+        glow.addColorStop(0.66, "rgba(116, 156, 255, 0.22)");
+        glow.addColorStop(1, "rgba(109, 255, 218, 0.20)");
+
+        line.addColorStop(0, "rgba(255, 218, 92, 0.82)");
+        line.addColorStop(0.18, "rgba(255, 118, 190, 0.92)");
+        line.addColorStop(0.38, "rgba(188, 118, 255, 0.92)");
+        line.addColorStop(0.58, "rgba(92, 178, 255, 0.92)");
+        line.addColorStop(0.78, "rgba(112, 255, 220, 0.88)");
+        line.addColorStop(1, "rgba(255, 255, 255, 0.92)");
+
+        ctx.beginPath();
+        for (i = 0; i < points.length; i += 1) {
+          var source = points[i];
+          var tremor = 1 + 0.012 * Math.sin(time * 4.2 + source.local * 32);
+          var p = {
+            x: source.x * tremor + Math.sin(time * 5.1 + source.local * 80) * profile.drift,
+            y: source.y * tremor + Math.cos(time * 4.7 + source.local * 73) * profile.drift,
+            z: source.z
+          };
+          var q = project(p);
+          if (!last) {
+            ctx.moveTo(q.x, q.y);
+          } else {
+            ctx.lineTo(q.x, q.y);
+          }
+          last = q;
+        }
+        ctx.lineCap = "round";
+        ctx.lineJoin = "round";
+        ctx.shadowBlur = profile.outerShadow;
+        ctx.shadowColor = "rgba(255, 108, 210, 0.52)";
+        ctx.globalAlpha = profile.outerAlpha;
+        ctx.lineWidth = profile.outerLineWidth;
+        ctx.strokeStyle = glow;
+        ctx.stroke();
+
+        ctx.shadowBlur = profile.innerShadow;
+        ctx.globalAlpha = profile.innerAlpha;
+        ctx.lineWidth = profile.innerLineWidth;
+        ctx.strokeStyle = line;
+        ctx.stroke();
+
+        ctx.restore();
+      }
+
+      function animate() {
+        var speed = profile.speed;
+        time += 0.016 * speed;
+
+        if (!dragging) {
+          targetTiltY = Math.sin(time * 0.55) * 0.7;
+          targetTiltX = Math.cos(time * 0.48) * 0.45;
+        }
+        tiltX += (targetTiltX - tiltX) * 0.08;
+        tiltY += (targetTiltY - tiltY) * 0.08;
+
+        fadeBackground();
+        drawButterfly();
+        if (!reduceMotion.matches) {
+          rafId = window.requestAnimationFrame(animate);
+        }
+      }
+
+      function reset() {
+        fadeBackground();
+        makePoints();
+      }
+
+      function renderStatic() {
+        time += 0.01;
+        tiltX += (targetTiltX - tiltX) * 0.08;
+        tiltY += (targetTiltY - tiltY) * 0.08;
+        fadeBackground();
+        drawButterfly();
+      }
+
+      function restart() {
+        if (rafId) {
+          window.cancelAnimationFrame(rafId);
+          rafId = 0;
+        }
+
+        reset();
+
+        if (reduceMotion.matches) {
+          renderStatic();
+        } else {
+          animate();
+        }
+      }
+
+      canvas.addEventListener("pointerdown", function (event) {
+        dragging = true;
+        lastMouse = { x: event.clientX, y: event.clientY };
+        canvas.setPointerCapture(event.pointerId);
+      });
+
+      canvas.addEventListener("pointermove", function (event) {
+        var dx;
+        var dy;
+        if (!dragging) {
+          return;
+        }
+
+        dx = event.clientX - lastMouse.x;
+        dy = event.clientY - lastMouse.y;
+        targetTiltY += dx * 0.01;
+        targetTiltX += dy * 0.01;
+        lastMouse = { x: event.clientX, y: event.clientY };
+      });
+
+      canvas.addEventListener("pointerup", function (event) {
+        dragging = false;
+        try {
+          canvas.releasePointerCapture(event.pointerId);
+        } catch (error) {
+          return;
+        }
+      });
+
+      canvas.addEventListener("pointerleave", function () {
+        dragging = false;
+      });
+
+      function handleResize() {
+        resize();
+        restart();
+      }
+
+      window.addEventListener("resize", handleResize);
+      window.addEventListener("orientationchange", handleResize);
+
+      if (typeof reduceMotion.addEventListener === "function") {
+        reduceMotion.addEventListener("change", restart);
+      } else if (typeof reduceMotion.addListener === "function") {
+        reduceMotion.addListener(restart);
+      }
+
+      if (typeof ResizeObserver === "function") {
+        resizeObserver = new ResizeObserver(handleResize);
+        resizeObserver.observe(stage);
+      }
+
+      resize();
+      restart();
+    }());
+  </script>
+</body>
+</html>
