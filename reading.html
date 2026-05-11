@@ -1,0 +1,45 @@
+---
+layout: blog_layout
+title: 阅读
+---
+
+<section class="section-title reading-header">
+    <div>
+        <p>Reading</p>
+        <h2>阅读</h2>
+    </div>
+    <div class="reading-sort" role="group" aria-label="阅读排序">
+        <button type="button" class="is-active is-desc" data-reading-sort="rating" data-reading-order="desc">按打分排序</button>
+        <button type="button" data-reading-sort="date" data-reading-order="desc">按时间排序</button>
+    </div>
+</section>
+
+<div class="post-index reading-index paginated-post-index" data-page-size="10">
+    {% for book in site.data.reading %}
+        {% if book.url %}
+        <a class="post-index-item reading-item" href="{{ book.url }}" target="_blank" rel="noopener" data-rating="{{ book.rating | default: 0 }}" data-date="{{ book.date | default: '' }}" data-title="{{ book.title | escape }}">
+        {% else %}
+        <div class="post-index-item reading-item" data-rating="{{ book.rating | default: 0 }}" data-date="{{ book.date | default: '' }}" data-title="{{ book.title | escape }}">
+        {% endif %}
+            <span class="reading-book-main">
+                <span class="post-index-title">{{ book.title }}</span>
+                <span class="reading-book-meta">
+                    {% if book.author %}{{ book.author }}{% endif %}
+                    {% if book.author and book.publisher %}<span>/</span>{% endif %}
+                    {% if book.publisher %}{{ book.publisher }}{% endif %}
+                </span>
+            </span>
+            <span class="reading-rating" aria-label="{{ book.rating }} 星">
+                {% if book.rating %}
+                <span class="reading-stars" aria-hidden="true">{% for i in (1..book.rating) %}★{% endfor %}</span>
+                {% endif %}
+                {% if book.date %}<span class="reading-date">{{ book.date }}</span>{% endif %}
+            </span>
+        {% if book.url %}
+        </a>
+        {% else %}
+        </div>
+        {% endif %}
+    {% endfor %}
+</div>
+<nav class="pagination-controls" aria-label="阅读分页"></nav>

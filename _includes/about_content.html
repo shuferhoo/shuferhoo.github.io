@@ -1,0 +1,14 @@
+{% if site.data.author.interests %}
+<section class="section-title">
+    <p>Interests</p>
+    <h2>兴趣</h2>
+</section>
+
+<div class="post-index">
+        {% for interest in site.data.author.interests %}
+            <div class="post-index-item">
+                <span class="post-index-title">{{ interest }}</span>
+            </div>
+        {% endfor %}
+</div>
+{% endif %}

@@ -1,0 +1,154 @@
+<div class="footer-copyright">
+    <div class="container-fluid">
+        <div class="row-fluid">
+            <div class="col-md-12">
+                Copyright &copy; <span id="copyright-year">2021</span> {{ site.data.author.name }} - All rights reserved.
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="/assets/js/jquery.min.js"></script>
+<script type="text/javascript" src="/assets/js/bootstrap.min.js"></script>
+<script>
+  document.getElementById("copyright-year").textContent = new Date().getFullYear();
+  function initPagination(list) {
+    var pageSize = parseInt(list.getAttribute("data-page-size"), 10) || 10;
+    var items = Array.prototype.slice.call(list.querySelectorAll(".post-index-item"));
+    var controls = list.nextElementSibling && list.nextElementSibling.classList.contains("pagination-controls")
+      ? list.nextElementSibling
+      : null;
+
+    if (!controls || items.length <= pageSize) {
+      if (controls) {
+        controls.classList.remove("is-visible");
+        controls.innerHTML = "";
+      }
+      return;
+    }
+
+    controls.innerHTML = "";
+    var pageCount = Math.ceil(items.length / pageSize);
+
+    function updateEllipses() {
+      Array.prototype.slice.call(controls.querySelectorAll(".pagination-ellipsis")).forEach(function (ellipsis) {
+        controls.removeChild(ellipsis);
+      });
+
+      var visibleButtons = Array.prototype.slice.call(controls.querySelectorAll("button:not(.is-hidden)"));
+      visibleButtons.forEach(function (button, index) {
+        var next = visibleButtons[index + 1];
+        if (!next) {
+          return;
+        }
+
+        var currentPage = parseInt(button.getAttribute("data-page"), 10);
+        var nextPage = parseInt(next.getAttribute("data-page"), 10);
+        if (nextPage - currentPage > 1) {
+          var ellipsis = document.createElement("span");
+          ellipsis.className = "pagination-ellipsis";
+          ellipsis.setAttribute("aria-hidden", "true");
+          ellipsis.textContent = "...";
+          controls.insertBefore(ellipsis, next);
+        }
+      });
+    }
+
+    function updateButtons(page) {
+      var buttons = Array.prototype.slice.call(controls.querySelectorAll("button"));
+      buttons.forEach(function (button) {
+        var buttonPage = parseInt(button.getAttribute("data-page"), 10);
+        var shouldShow = pageCount <= 9 ||
+          buttonPage === 0 ||
+          buttonPage === pageCount - 1 ||
+          Math.abs(buttonPage - page) <= 2;
+
+        button.classList.toggle("is-hidden", !shouldShow);
+        button.classList.toggle("is-active", buttonPage === page);
+        button.setAttribute("aria-current", buttonPage === page ? "page" : "false");
+      });
+
+      updateEllipses();
+    }
+
+    function showPage(page) {
+      items.forEach(function (item, index) {
+        var isCurrent = index >= page * pageSize && index < (page + 1) * pageSize;
+        item.classList.toggle("is-hidden", !isCurrent);
+      });
+
+      updateButtons(page);
+    }
+
+    for (var i = 0; i < pageCount; i += 1) {
+      var button = document.createElement("button");
+      button.type = "button";
+      button.textContent = i + 1;
+      button.setAttribute("data-page", i);
+      button.setAttribute("aria-label", "第 " + (i + 1) + " 页");
+      button.addEventListener("click", showPage.bind(null, i));
+      controls.appendChild(button);
+    }
+
+    controls.classList.add("is-visible");
+    showPage(0);
+  }
+
+  document.querySelectorAll(".paginated-post-index").forEach(initPagination);
+
+  document.querySelectorAll(".reading-sort").forEach(function (sorter) {
+    var header = sorter.closest(".reading-header");
+    var list = header ? header.nextElementSibling : sorter.nextElementSibling;
+    if (!list || !list.classList.contains("reading-index")) {
+      return;
+    }
+
+    var controls = list.nextElementSibling && list.nextElementSibling.classList.contains("pagination-controls")
+      ? list.nextElementSibling
+      : null;
+
+    function sortItems(mode, order) {
+      var items = Array.prototype.slice.call(list.querySelectorAll(".reading-item"));
+      items.sort(function (a, b) {
+        var aRating = parseInt(a.getAttribute("data-rating"), 10) || 0;
+        var bRating = parseInt(b.getAttribute("data-rating"), 10) || 0;
+        var aDate = a.getAttribute("data-date") || "";
+        var bDate = b.getAttribute("data-date") || "";
+        var aTitle = a.getAttribute("data-title") || "";
+        var bTitle = b.getAttribute("data-title") || "";
+
+        var result;
+        if (mode === "date") {
+          result = bDate.localeCompare(aDate) || bRating - aRating || aTitle.localeCompare(bTitle, "zh-CN");
+        } else {
+          result = bRating - aRating || bDate.localeCompare(aDate) || aTitle.localeCompare(bTitle, "zh-CN");
+        }
+
+        return order === "asc" ? -result : result;
+      });
+
+      items.forEach(function (item) {
+        list.appendChild(item);
+      });
+
+      initPagination(list);
+    }
+
+    sorter.querySelectorAll("button").forEach(function (button) {
+      button.addEventListener("click", function () {
+        var wasActive = button.classList.contains("is-active");
+        var nextOrder = wasActive && button.getAttribute("data-reading-order") === "desc" ? "asc" : "desc";
+
+        sorter.querySelectorAll("button").forEach(function (other) {
+          other.classList.toggle("is-active", other === button);
+          other.classList.remove("is-asc", "is-desc");
+        });
+
+        button.setAttribute("data-reading-order", nextOrder);
+        button.classList.add(nextOrder === "asc" ? "is-asc" : "is-desc");
+        sortItems(button.getAttribute("data-reading-sort"), nextOrder);
+      });
+    });
+  });
+</script>
+
+{% include googleanalytics.html %}

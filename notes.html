@@ -1,0 +1,32 @@
+---
+layout: blog_layout
+title: 手记
+---
+
+<section class="section-title">
+    <p>Notes</p>
+    <h2>手记</h2>
+</section>
+
+<div class="post-index notes-index paginated-post-index" data-page-size="10">
+{% for post in site.posts %}
+    {% assign post_category = post.category %}
+    {% unless post_category %}
+        {% assign post_category = post.categories | first %}
+    {% endunless %}
+    {% if post_category == "note" or post_category == "diary" or post_category == "手记" or post_category == "日记" %}
+        <a class="post-index-item" href="{{ post.url }}">
+            <span class="post-index-title">{{ post.title }}</span>
+            <span class="post-index-time">{{ post.time }}</span>
+        </a>
+    {% elsif post_category == nil %}
+        {% if post.title contains "复盘" %}
+        <a class="post-index-item" href="{{ post.url }}">
+            <span class="post-index-title">{{ post.title }}</span>
+            <span class="post-index-time">{{ post.time }}</span>
+        </a>
+        {% endif %}
+    {% endif %}
+{% endfor %}
+</div>
+<nav class="pagination-controls" aria-label="手记分页"></nav>
