@@ -1,3 +1,9 @@
+- title: 'High-Frequency Trading'
+  rating: 1
+  date: '2026-05-14'
+  author: 'Irene Aldridge'
+  publisher: 'Wiley'
+  url: https://book.douban.com/subject/4726990/
 - title: Frequently Asked Questions in Quantitative Finance
   rating: 5
   date: '2026-05-01'
@@ -104,7 +110,7 @@
   rating: 5
   date: '2025-04-18'
   author: Lexington Books
-  publisher: ''
+  publisher: 'Lexington Books'
   url: https://book.douban.com/subject/37316171/
 - title: 大模型动力引擎
   rating: 5
@@ -380,13 +386,13 @@
   rating: 5
   date: '2024-08-17'
   author: 中国妇女出版社
-  publisher: ''
+  publisher: '中国妇女出版社'
   url: https://book.douban.com/subject/30610099/
 - title: 怀孕知识百科
   rating: 5
   date: '2024-08-17'
   author: 中国妇女出版社
-  publisher: ''
+  publisher: '中国妇女出版社'
   url: https://book.douban.com/subject/30689322/
 - title: 金色的能量
   rating: 5
@@ -524,7 +530,7 @@
   rating: 5
   date: '2024-07-18'
   author: 广东经济出版社
-  publisher: ''
+  publisher: '广东经济出版社'
   url: https://book.douban.com/subject/30659344/
 - title: 大学俄语1
   rating: 5
@@ -566,7 +572,7 @@
   rating: 5
   date: '2024-07-11'
   author: 城成
-  publisher: ''
+  publisher: '上海财经大学出版社'
   url: https://book.douban.com/subject/36553662/
 - title: 图解电子元器件
   rating: 5
@@ -830,7 +836,7 @@
   rating: 5
   date: '2023-07-07'
   author: 科学出版社
-  publisher: ''
+  publisher: '科学出版社'
   url: https://book.douban.com/subject/36408794/
 - title: 量子计算公开课
   rating: 5
@@ -866,13 +872,13 @@
   rating: 5
   date: '2023-05-08'
   author: 魏利军 王立峰 王海盛
-  publisher: ''
+  publisher: '中国医药科技出版社'
   url: https://book.douban.com/subject/35834645/
 - title: 医药行业估值
   rating: 5
   date: '2023-04-04'
   author: 机械工业出版社
-  publisher: ''
+  publisher: '机械工业出版社'
   url: https://book.douban.com/subject/36345676/
 - title: 免疫系统
   rating: 5
@@ -890,7 +896,7 @@
   rating: 5
   date: '2023-02-21'
   author: "(德)格哈德·克勒贝(Gerhard Klebe)"
-  publisher: ''
+  publisher: '科学出版社'
   url: https://book.douban.com/subject/34466820/
 - title: 临床试验简史
   rating: 5
@@ -1190,7 +1196,7 @@
   rating: 5
   date: '2021-10-31'
   author: 肖冰
-  publisher: ''
+  publisher: '中国青年出版社'
   url: https://book.douban.com/subject/35489960/
 - title: 机器学习
   rating: 5
@@ -1472,7 +1478,7 @@
   rating: 5
   date: '2020-12-15'
   author: 北落的师门
-  publisher: ''
+  publisher: '中国铁道出版社'
   url: https://book.douban.com/subject/35089134/
 - title: 投资中最简单的事
   rating: 5
@@ -1538,13 +1544,13 @@
   rating: 5
   date: '2020-06-06'
   author: 山东人民出版社
-  publisher: ''
+  publisher: '山东人民出版社'
   url: https://book.douban.com/subject/35066979/
 - title: 西方哲学史800题
   rating: 5
   date: '2020-06-06'
   author: 山东人民出版社
-  publisher: ''
+  publisher: '山东人民出版社'
   url: https://book.douban.com/subject/35066207/
 - title: 中国思想史
   rating: 5
@@ -1568,7 +1574,7 @@
   rating: 5
   date: '2020-06-05'
   author: 徐忠良 译
-  publisher: ''
+  publisher: '三民'
   url: https://book.douban.com/subject/3190828/
 - title: 列子
   rating: 5
@@ -1790,7 +1796,7 @@
   rating: 5
   date: '2019-06-21'
   author: 杨德龙
-  publisher: ''
+  publisher: '中国财政经济出版社'
   url: https://book.douban.com/subject/33406876/
 - title: 韩非子
   rating: 5
@@ -2042,7 +2048,7 @@
   rating: 5
   date: '2019-04-08'
   author: "(英)达尔文"
-  publisher: ''
+  publisher: '武汉出版社'
   url: https://book.douban.com/subject/19934712/
 - title: 2012年注册会计师CPA考试教材书 注会教材 全套6本
   rating: 5
@@ -2060,7 +2066,7 @@
   rating: 5
   date: '2019-04-07'
   author: Charles T.Horngren
-  publisher: ''
+  publisher: 'Prentice Hall International Inc'
   url: https://book.douban.com/subject/3223268/
 - title: Operations and Supply Management
   rating: 5
@@ -2540,7 +2546,7 @@
   rating: 4
   date: '2025-09-09'
   author: 电子工业出版社
-  publisher: ''
+  publisher: '电子工业出版社'
   url: https://book.douban.com/subject/34461715/
 - title: 交易与交易所
   rating: 4
@@ -2780,7 +2786,7 @@
   rating: 4
   date: '2023-04-27'
   author: 魏利军
-  publisher: ''
+  publisher: '中国医药科技出版社'
   url: https://book.douban.com/subject/36362213/
 - title: 人人可懂的量子计算
   rating: 4
@@ -2948,7 +2954,7 @@
   rating: 4
   date: '2020-11-26'
   author: 上海塔坚信息科技有限公司
-  publisher: ''
+  publisher: '上海科学技术文献出版社'
   url: https://book.douban.com/subject/35031674/
 - title: 投资中不简单的事
   rating: 4
@@ -3158,7 +3164,7 @@
   rating: 4
   date: '2019-04-07'
   author: 王学民 著
-  publisher: ''
+  publisher: '上海财经大学出版社'
   url: https://book.douban.com/subject/33370710/
 - title: 数据库原理与应用
   rating: 4
@@ -3542,7 +3548,7 @@
   rating: 3
   date: '2024-07-12'
   author: "[奥地利] 路德维希·冯·米塞斯"
-  publisher: ''
+  publisher: '商务印书馆'
   url: https://book.douban.com/subject/30324042/
 - title: 人月神话
   rating: 3
@@ -3650,13 +3656,13 @@
   rating: 3
   date: '2023-04-03'
   author: "[美]雷蒙德常"
-  publisher: ''
+  publisher: '科学出版社'
   url: https://book.douban.com/subject/34938835/
 - title: RNA疫苗：方法与操作
   rating: 3
   date: '2023-03-14'
   author: "（德）托马斯·克拉姆斯等著；王升启主译"
-  publisher: ''
+  publisher: '科学出版社'
   url: https://book.douban.com/subject/35029220/
 - title: 柳叶刀临床研究基本概念
   rating: 3
@@ -3686,7 +3692,7 @@
   rating: 3
   date: '2023-01-06'
   author: 天津科学技术出版社
-  publisher: ''
+  publisher: '天津科学技术出版社'
   url: https://book.douban.com/subject/35118459/
 - title: 岭南中医
   rating: 3
@@ -3776,13 +3782,13 @@
   rating: 3
   date: '2021-11-22'
   author: 段永平
-  publisher: ''
+  publisher: '浙版数媒'
   url: https://book.douban.com/subject/35254511/
 - title: 段永平投资问答录（投资逻辑篇）
   rating: 3
   date: '2021-11-22'
   author: 段永平
-  publisher: ''
+  publisher: '浙版数媒'
   url: https://book.douban.com/subject/35279134/
 - title: 奥马哈之雾
   rating: 3
@@ -3854,7 +3860,7 @@
   rating: 3
   date: '2020-12-04'
   author: 浙江科学技术出版社
-  publisher: ''
+  publisher: '浙江科学技术出版社'
   url: https://book.douban.com/subject/35277155/
 - title: 医药资本论
   rating: 3
@@ -3926,7 +3932,7 @@
   rating: 3
   date: '2019-08-28'
   author: 陈元
-  publisher: ''
+  publisher: '中信出版社'
   url: https://book.douban.com/subject/30380465/
 - title: 美国货币史 1867—1960
   rating: 3
@@ -3956,7 +3962,7 @@
   rating: 3
   date: '2019-06-30'
   author: 中国期货业协会
-  publisher: ''
+  publisher: '中国财政经济出版社'
   url: https://book.douban.com/subject/33429144/
 - title: 期货投资者教育系列丛书：纤维板、胶合板期货
   rating: 3
@@ -4490,7 +4496,7 @@
   rating: 2
   date: '2022-07-14'
   author: 上海申银万国证券研究所有限公司
-  publisher: ''
+  publisher: '上海人民出版社'
   url: https://book.douban.com/subject/35640880/
 - title: 统计数据会说谎
   rating: 2
@@ -5048,7 +5054,7 @@
   rating: 1
   date: '2019-05-09'
   author: 上海财经大学出版社
-  publisher: ''
+  publisher: '上海财经大学出版社'
   url: https://book.douban.com/subject/30739540/
 - title: 爱的教育
   rating: 1
