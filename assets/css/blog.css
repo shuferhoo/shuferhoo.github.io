@@ -519,6 +519,29 @@ p.readmore a {
   margin: 0 auto;
 }
 
+.article-video {
+  display: block;
+  width: min(100%, 860px);
+  max-height: calc(100vh - 220px);
+  background: #000;
+}
+
+.advice-2026-image {
+  text-align: left;
+}
+
+.advice-2026-image img {
+  display: block;
+  margin: 0;
+}
+
+@media (min-width: 641px) {
+  .advice-2026-image img {
+    width: auto;
+    max-height: calc(100vh - 220px);
+  }
+}
+
 .article-figure--xitang img {
   box-shadow: 0 20px 44px rgba(0, 0, 0, 0.22);
 }
