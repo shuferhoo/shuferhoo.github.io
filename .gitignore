@@ -8,3 +8,6 @@ resumecard.iml
 .DS_Store
 ._*
 local/
+scripts/update-reading.sh
+deploy/jekyll-douban-sync.service
+deploy/jekyll-douban-sync.timer
