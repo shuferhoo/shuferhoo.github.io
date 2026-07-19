@@ -4,7 +4,7 @@ title: 过美元论
 time: 2025年03月23日 星期日
 location: 深圳
 category: essay
-pulished: true
+published: true
 excerpt_separator: "```"
 ---
 

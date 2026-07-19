@@ -4,7 +4,7 @@ title: 银杏树之念
 time: 2022年09月14日 星期三
 location: 深圳
 category: essay
-pulished: true
+published: true
 excerpt_separator: "```"
 ---
 

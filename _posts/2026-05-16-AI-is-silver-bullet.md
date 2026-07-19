@@ -4,7 +4,7 @@ title: AI就是银弹
 time: 2026年05月16日 星期六
 location: 深圳
 category: essay
-pulished: true
+published: true
 excerpt_separator: "```"
 ---
 

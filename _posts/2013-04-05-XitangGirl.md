@@ -4,7 +4,7 @@ title: 西塘一般的少女
 time: 2013年04月05日 星期二
 location: 上海
 category: essay
-pulished: true
+published: true
 excerpt_separator: "#"
 ---
 

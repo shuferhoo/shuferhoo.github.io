@@ -4,7 +4,7 @@ title: 狗狗币是真正的比特币
 time: 2024年01月12日 星期五
 location: 深圳
 category: essay
-pulished: true
+published: true
 excerpt_separator: "```"
 ---
 

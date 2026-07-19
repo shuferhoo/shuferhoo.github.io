@@ -4,7 +4,7 @@ title: 股市本质
 time: 2018年07月09日 星期一
 location: 广州
 category: essay
-pulished: true
+published: true
 excerpt_separator: "```"
 ---
 
