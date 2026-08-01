@@ -11,7 +11,6 @@ title: 小白小白
   <title>{{ site.title }}</title>
   <meta name="description" content="{{ site.description }}">
   <link rel="canonical" href="{{ site.url }}/">
-  <link rel="icon" type="image/png" href="{{ site.favicon }}">
   <style>
     :root {
       --text: #f4f7fb;
@@ -81,20 +80,6 @@ title: 小白小白
       align-items: center;
       gap: 14px;
       min-width: 0;
-    }
-
-    .home-avatar {
-      flex: 0 0 auto;
-    }
-
-    .home-avatar img {
-      width: 60px;
-      height: 60px;
-      border: 1px solid var(--line);
-      border-radius: 18px;
-      object-fit: cover;
-      background: rgba(18, 20, 25, 0.46);
-      box-shadow: 0 14px 34px rgba(0, 0, 0, 0.28);
     }
 
     .home-title {
@@ -310,12 +295,6 @@ title: 小白小白
         font-size: 22px;
       }
 
-      .home-avatar img {
-        width: 46px;
-        height: 46px;
-        border-radius: 14px;
-      }
-
       .home-tagline {
         font-size: 12px;
       }
@@ -455,9 +434,6 @@ title: 小白小白
 <body>
   <nav class="home-nav" aria-label="主导航">
     <div class="home-identity">
-      <a class="home-avatar" href="/">
-        <img alt="My Avatar" src="/assets/img/avatar.JPG">
-      </a>
       <div class="home-title">
         <a class="home-brand" href="/">{{ site.data.blog.title }}</a>
         <p class="home-tagline">{{ site.data.blog.description }}</p>
