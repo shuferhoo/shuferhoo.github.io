@@ -436,16 +436,16 @@ title: 小白小白
   <nav class="home-nav" aria-label="主导航">
     <div class="home-identity">
       <div class="home-title">
-        <a class="home-brand" href="/">{{ site.data.blog.title }}</a>
+        <a class="home-brand" href="{{ '/' | relative_url }}">{{ site.data.blog.title }}</a>
         <p class="home-tagline">{{ site.data.blog.description }}</p>
       </div>
     </div>
     <div class="home-links">
-      <a href="/">主页</a>
-      <a href="/essays.html">散文</a>
-      <a href="/notes.html">手记</a>
-      <a href="/reading.html">阅读</a>
-      <a href="/about.html">关于我</a>
+      <a href="{{ '/' | relative_url }}">主页</a>
+      <a href="{{ '/essays.html' | relative_url }}">散文</a>
+      <a href="{{ '/notes.html' | relative_url }}">手记</a>
+      <a href="{{ '/reading.html' | relative_url }}">阅读</a>
+      <a href="{{ '/about.html' | relative_url }}">关于我</a>
     </div>
   </nav>
 

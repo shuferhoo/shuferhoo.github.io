@@ -9,7 +9,7 @@ excerpt_separator: "```"
 ---
 
 <video class="article-video" controls preload="metadata" playsinline>
-  <source src="/assets/files/AI.mp4" type="video/mp4">
+  <source src="{{ '/assets/files/AI.mp4' | relative_url }}" type="video/mp4">
   你的浏览器不支持 video 标签。
 </video>
 

@@ -2,7 +2,7 @@
     <div class="authorheader">
         <div class="blogtitle">
             <div class="blogtitle-main">
-                <h1><a href="/">{{ site.data.blog.title }}</a></h1>
+                <h1><a href="{{ '/' | relative_url }}">{{ site.data.blog.title }}</a></h1>
             </div>
             <p class="site-tagline blogtitle-meta">
                 <span>{{ site.data.blog.description }}</span>
@@ -12,11 +12,11 @@
 
     <div class="header-side">
         <nav class="menu" role="navigation" aria-label="主导航">
-            <a href="/">主页</a>
-            <a href="/essays.html">散文</a>
-            <a href="/notes.html">手记</a>
-            <a href="/reading.html">阅读</a>
-            <a href="/about.html">关于我</a>
+            <a href="{{ '/' | relative_url }}">主页</a>
+            <a href="{{ '/essays.html' | relative_url }}">散文</a>
+            <a href="{{ '/notes.html' | relative_url }}">手记</a>
+            <a href="{{ '/reading.html' | relative_url }}">阅读</a>
+            <a href="{{ '/about.html' | relative_url }}">关于我</a>
         </nav>
     </div>
 </header>

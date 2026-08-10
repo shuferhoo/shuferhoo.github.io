@@ -36,7 +36,7 @@ title: 手记
 <div class="post-index notes-index paginated-post-index" data-page-size="10">
             {% assign current_year = post_year %}
         {% endif %}
-        <a class="post-index-item" href="{{ post.url }}">
+        <a class="post-index-item" href="{{ post.url | relative_url }}">
             <span class="post-index-title">{{ post.title }}</span>
             <span class="post-index-time">{{ post.time }}</span>
         </a>

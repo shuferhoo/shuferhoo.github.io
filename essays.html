@@ -15,13 +15,13 @@ title: 散文
         {% assign post_category = post.categories | first %}
     {% endunless %}
     {% if post_category == "essay" or post_category == "散文" %}
-        <a class="post-index-item" href="{{ post.url }}">
+        <a class="post-index-item" href="{{ post.url | relative_url }}">
             <span class="post-index-title">{{ post.title }}</span>
             <span class="post-index-time">{{ post.time }}</span>
         </a>
     {% elsif post_category == nil %}
         {% unless post.title contains "复盘" %}
-        <a class="post-index-item" href="{{ post.url }}">
+        <a class="post-index-item" href="{{ post.url | relative_url }}">
             <span class="post-index-title">{{ post.title }}</span>
             <span class="post-index-time">{{ post.time }}</span>
         </a>
